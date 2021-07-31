@@ -6,11 +6,8 @@ use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
 use App\Models\UserRoleRelation;
 use App\User;
-use Auth;
 use Crypt;
-use Redirect;
 use Validator;
-use App\Models\Role;
 use Yajra\Datatables\Datatables;
 
 class EmployeeController extends Controller

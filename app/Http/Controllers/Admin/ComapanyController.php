@@ -6,9 +6,7 @@ use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
 use App\Models\UserRoleRelation;
 use Yajra\Datatables\Datatables;
-use App\Models\Role;
 use Validator;
-use Redirect;
 use App\User;
 use Crypt;
 

@@ -8,9 +8,7 @@ use App\Models\UserRoleRelation;
 use App\User;
 use Auth;
 use Crypt;
-use Redirect;
 use Validator;
-use App\Models\Role;
 use Yajra\Datatables\Datatables;
 
 class EmployeeManagementController extends Controller
