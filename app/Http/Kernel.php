@@ -19,6 +19,7 @@ class Kernel extends HttpKernel
         \App\Http\Middleware\TrimStrings::class,
         \Illuminate\Foundation\Http\Middleware\ConvertEmptyStringsToNull::class,
         \App\Http\Middleware\TrustProxies::class,
+        \App\Http\Middleware\Cors::class,
     ];
 
     /**
@@ -60,6 +61,14 @@ class Kernel extends HttpKernel
         'signed' => \Illuminate\Routing\Middleware\ValidateSignature::class,
         'throttle' => \Illuminate\Routing\Middleware\ThrottleRequests::class,
         'verified' => \Illuminate\Auth\Middleware\EnsureEmailIsVerified::class,
+
+        'role' => \Zizaco\Entrust\Middleware\EntrustRole::class,
+        'permission' => \Zizaco\Entrust\Middleware\EntrustPermission::class,
+        'ability' => \Zizaco\Entrust\Middleware\EntrustAbility::class,
+        
+        'admin' => \App\Http\Middleware\Admin::class,
+        'company' => \App\Http\Middleware\Company::class,
+        'users' => \App\Http\Middleware\PolicyHolder::class,
     ];
 
     /**

@@ -16,7 +16,7 @@ return [
     'name' => env('APP_NAME', 'Laravel'),
 
     /*
-    |--------------------------------------------------------------------------
+    |------------------------------------- -------------------------------------
     | Application Environment
     |--------------------------------------------------------------------------
     |
@@ -52,7 +52,7 @@ return [
     |
     */
 
-    'url' => env('APP_URL', 'http://localhost'),
+    'url' => env('APP_URL', 'http://localhost/masjidfunderDev/'),
 
     'asset_url' => env('ASSET_URL', null),
 
@@ -175,6 +175,9 @@ return [
         App\Providers\EventServiceProvider::class,
         App\Providers\RouteServiceProvider::class,
 
+        Zizaco\Entrust\EntrustServiceProvider::class,
+        Yajra\DataTables\DataTablesServiceProvider::class,
+
     ],
 
     /*
@@ -226,6 +229,10 @@ return [
         'Validator' => Illuminate\Support\Facades\Validator::class,
         'View' => Illuminate\Support\Facades\View::class,
 
+        'Entrust'   => Zizaco\Entrust\EntrustFacade::class,
+        'DataTables' => Yajra\DataTables\Facades\DataTables::class,
+
     ],
+    
 
 ];
