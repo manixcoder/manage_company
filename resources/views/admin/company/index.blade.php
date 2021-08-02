@@ -61,8 +61,9 @@
                 },
                 {
                     data: 'logo',
-                    name: 'logo',
-                    orderable: true
+                    "render": function(data, type, row) {
+                        return '<img src="{{url('/public/uploads/company_logo/') }}/'+data+'" style="width:80px;hight:80px;" />';
+                    }
                 },
               
                 {
